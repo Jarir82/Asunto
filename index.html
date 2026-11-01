@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vuokrattavana: Panimokatu 1 A 9, Hamina</title>
+<meta name="description" content="Valoisa vuokra-asunto parvekkeella Haminassa, Panimokatu 1 A 9. Katso kuvat ja tiedot.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Instrument+Serif&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f2f4f3; --surface:#ffffff; --ink:#1b2a2a; --muted:#5d6b6a;
+  --line:#d9dfdd; --accent:#2f5d57; --accent-ink:#ffffff; --ph:#e3e8e6;
+  --serif:"Instrument Serif",Georgia,serif;
+  --sans:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#121a1a; --surface:#1a2424; --ink:#e8eeec; --muted:#9aa9a7;
+    --line:#2b3837; --accent:#8cc4bb; --accent-ink:#0f1b1a; --ph:#223030;
+  }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--sans)}
+img{max-width:100%;display:block}
+a{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.wrap{max-width:68rem;margin:0 auto;padding:0 1.25rem}
+
+/* Kuvapaikat: kuva peittää harmaan paikkamerkin, kun tiedosto löytyy */
+.ph{position:relative;margin:0;background:var(--ph);border-radius:6px;overflow:hidden;
+  display:grid;place-items:center;color:var(--muted);font-size:.9rem}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+header.top{padding:1.25rem 0;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.brand{font-weight:600;letter-spacing:.01em}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-ink);text-decoration:none;
+  padding:.8rem 1.4rem;border-radius:4px;font-weight:600}
+.btn:hover{filter:brightness(1.1)}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
+
+.hero{padding:1rem 0 3rem}
+.hero .ph{aspect-ratio:16/9;min-height:16rem}
+.hero h1{font:400 clamp(2.4rem,6vw,4.4rem)/1.05 var(--serif);margin:2rem 0 .5rem;max-width:18ch}
+.hero p.lead{font-size:1.2rem;color:var(--muted);max-width:42rem;margin:0 0 1.5rem}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(9rem,1fr));gap:0;
+  background:var(--surface);border:1px solid var(--line);border-radius:6px;margin:0 0 4rem}
+.facts div{padding:1.1rem 1.25rem;border-right:1px solid var(--line)}
+.facts div:last-child{border-right:0}
+.facts dt{font-size:.85rem;color:var(--muted)}
+.facts dd{margin:.15rem 0 0;font:400 1.7rem/1.2 var(--serif)}
+
+section{padding:0 0 4rem}
+h2{font:400 clamp(1.8rem,3.5vw,2.5rem)/1.15 var(--serif);margin:0 0 1.25rem}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.cols p{margin:0 0 1rem;max-width:36rem}
+ul.plain{list-style:none;margin:0;padding:0}
+ul.plain li{padding:.65rem 0;border-bottom:1px solid var(--line)}
+ul.plain li:first-child{border-top:1px solid var(--line)}
+
+.gallery{display:grid;gap:.75rem;margin-bottom:.75rem}
+.gallery.two{grid-template-columns:repeat(2,1fr)}
+.gallery.three{grid-template-columns:repeat(3,1fr)}
+.gallery.two .ph{aspect-ratio:4/3}
+.gallery.three .ph{aspect-ratio:3/4}
+
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:6px;overflow:hidden}
+th,td{text-align:left;padding:.85rem 1.1rem;border-bottom:1px solid var(--line)}
+tr:last-child th,tr:last-child td{border-bottom:0}
+th{font-weight:500;color:var(--muted);width:45%}
+
+.contact{background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:2.5rem;
+  display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:space-between;align-items:center}
+.contact h2{margin:0 0 .4rem}
+.contact p{margin:0;opacity:.9}
+.contact .mail{margin-top:.5rem}
+.contact .mail a{color:inherit;font-weight:600}
+.contact .btn{background:var(--accent-ink);color:var(--accent)}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:.9rem}
+
+@media (max-width:42rem){
+  .cols{grid-template-columns:1fr;gap:2rem}
+  .gallery.three{grid-template-columns:1fr 1fr}
+  .gallery.three .ph:first-child{grid-column:span 2;aspect-ratio:4/3}
+  .facts div{border-right:0;border-bottom:1px solid var(--line)}
+  .facts div:last-child{border-bottom:0}
+  .contact{padding:1.75rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <span class="brand">Vuokra-asunto</span>
+    <a class="btn ghost" href="#yhteys">Ota yhteyttä</a>
+  </header>
+
+  <!-- 1. KANSIKUVA: lisää tiedosto kuvat/kansi.jpg -->
+  <div class="hero">
+    <figure class="ph"><span>Kansikuva</span><img src="kuvat/kansi.jpg" alt="Olohuone, suuret ikkunat ja parvekkeen ovi"></figure>
+    <h1>Valoisa koti parvekkeella Haminassa</h1>
+    <p class="lead">Panimokatu 1 A 9, Haminan keskusta. Suuret ikkunat, avara oleskelutila ja oma parveke.</p>
+    <a class="btn" href="#yhteys">Pyydä esittely</a>
+  </div>
+
+  <!-- 2. PERUSTIEDOT -->
+  <dl class="facts">
+    <div><dt>Vuokra</dt><dd>520 €/kk</dd></div>
+    <div><dt>Koko</dt><dd>32,5 m²</dd></div>
+    <div><dt>Vesi</dt><dd>23 €/hlö/kk</dd></div>
+    <div><dt>Vakuus</dt><dd>1 000 €</dd></div>
+    <div><dt>Sopimus</dt><dd>12 kk</dd></div>
+    <div><dt>Vapaa</dt><dd>1.1.2027</dd></div>
+  </dl>
+
+  <!-- 3. KUVAUS -->
+  <section class="cols">
+    <div>
+      <h2>Asunnosta</h2>
+      <p>Valoisa ja siististi hoidettu koti Haminan keskustassa, Panimokadulla. Kolmannen kerroksen asunnossa on suuret ikkunat, avara oleskelu- ja keittiötila sekä makuutila, jossa on iso peilikaapisto. Länteen avautuvalle parvekkeelle paistaa iltapäivän ja illan aurinko.</p>
+      <p>Asunto sijaitsee rauhallisessa taloyhtiössä, jossa kaikki asunnot ovat omistusasuntoja. Taloyhtiön iso, puistomainen tontti tuo ympäristöön väljyyttä, ja kaikki palvelut ovat lyhyen matkan päässä. Autolle on saatavilla tolppapaikka erillismaksusta, ja pyörille löytyy oma varasto. Valokuitu sisältyy vuokraan.</p>
+    </div>
+    <div>
+      <h2>Varustelu</h2>
+      <ul class="plain">
+        <li>Oma parveke</li>
+        <li>Liesi, jääkaappipakastin ja tiskikone</li>
+        <li>Peilikaapisto makuuhuoneessa</li>
+        <li>Suihkutila ja bidee-suihku</li>
+        <li>Pyykki- ja kuivaushuone taloyhtiön käytössä</li>
+        <li>Saunatilat erillismaksusta</li>
+        <li>Valokuitu</li>
+        <li>Pyörävarasto</li>
+        <li>Häkkivarasto</li>
+        <li>Tolppapaikka erillismaksusta</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 4. KUVAT: lisää tiedostot kuvat-kansioon ja vaihda nimet tarvittaessa -->
+  <section>
+    <h2>Kuvat</h2>
+    <div class="gallery two">
+      <figure class="ph"><img src="kuvat/avotila.jpg" alt="Keittiö ja oleskelutila avoimena tilana" loading="lazy"></figure>
+      <figure class="ph"><img src="kuvat/makuuhuone.jpg" alt="Makuuhuone ja peilikaapisto" loading="lazy"></figure>
+    </div>
+    <div class="gallery three">
+      <figure class="ph"><img src="kuvat/keittio.jpg" alt="Keittiö" loading="lazy"></figure>
+      <figure class="ph"><img src="kuvat/parveke.jpg" alt="Parveke ja piha-alue" loading="lazy"></figure>
+      <figure class="ph"><img src="kuvat/kylpyhuone.jpg" alt="Kylpyhuone ja suihku" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- 5. VUOKRAEHDOT -->
+  <section>
+    <h2>Vuokraehdot</h2>
+    <table>
+      <tr><th>Vapaa</th><td>1.1.2027 alkaen</td></tr>
+      <tr><th>Vuokra</th><td>520 €/kk</td></tr>
+      <tr><th>Vesi</th><td>23 €/hlö/kk</td></tr>
+      <tr><th>Eräpäivä</th><td>Kuukauden 2. arkipäivä</td></tr>
+      <tr><th>Vakuus</th><td>1 000 €, maksetaan ennen muuttoa</td></tr>
+      <tr><th>Sopimus</th><td>12 kk määräaikainen, jatkuu sen jälkeen toistaiseksi voimassa olevana</td></tr>
+      <tr><th>Irtisanominen</th><td>Asuinhuoneiston vuokralain mukainen irtisanomisaika</td></tr>
+      <tr><th>Vuokran tarkistus</th><td>Sidottu elinkustannusindeksiin</td></tr>
+      <tr><th>Avaimet</th><td>3 kpl</td></tr>
+      <tr><th>Lemmikit</th><td>Ei sallittu, poikkeuksista sovitaan erikseen</td></tr>
+      <tr><th>Tupakointi</th><td>Ei sallittu huoneistossa</td></tr>
+      <tr><th>Kotivakuutus</th><td>Vuokralaisella oltava voimassa oleva kotivakuutus</td></tr>
+    </table>
+  </section>
+
+  <!-- 6. YHTEYS -->
+  <section id="yhteys">
+    <div class="contact">
+      <div>
+        <h2>Kiinnostuitko?</h2>
+        <p>Soita tai laita viestiä, niin sovitaan esittelyaika.</p>
+        <p class="mail"><a href="mailto:jaririkkola@gmail.com">jaririkkola@gmail.com</a></p>
+      </div>
+      <a class="btn" href="tel:+358407354682">040 735 4682</a>
+    </div>
+  </section>
+</div>
+</body>
+</html>
